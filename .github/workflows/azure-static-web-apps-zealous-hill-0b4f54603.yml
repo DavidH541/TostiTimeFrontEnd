@@ -23,6 +23,7 @@ jobs:
         with:
           node-version: '16.x'   
       - run: cd src && npm i
+      - run: cd src && npm install -g @angular/cli
       - run: cd src && npm run build
       - name: Build And Deploy
         id: builddeploy
